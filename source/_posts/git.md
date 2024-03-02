@@ -216,6 +216,6 @@ git diff commit1 commit2
 ```
 
 注意：命令的详细介绍在Linux环境下可如 `man git` 或者 `git --help` 查看
-## reference
+## Reference
 [git book](https://git-scm.com/book/zh/)  
 [git command introduce](https://blog.csdn.net/weixin_36168780/article/details/112100325)
