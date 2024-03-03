@@ -3,6 +3,8 @@ title: vim tutorial
 date: 2024-1-23 12:18:18
 tags: 
 - vim
+categories: 
+- [Tutorial, Program Tool]
 comment: true
 ---
 > Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient.

@@ -3,6 +3,8 @@ title: tmux tutorial
 date: 2023-10-23 12:18:18
 tags: 
 - tmux
+categories: 
+- [Tutorial, Program Tool]
 comment: true
 ---
 

@@ -3,6 +3,8 @@ title: neovim tutorial
 date: 2023-8-23 12:18:18
 tags: 
 - neovim
+categories: 
+- [Tutorial, Program Tool]
 comment: true
 
 ---
