@@ -7,8 +7,8 @@ categories:
 excerpt: "这是未完成待发布的博客"
 password: 1234560789
 comment: false
-thumbnail: "https://s2.loli.net/2024/03/03/x46FQWHYZ2sNlRu.jpg"
-cover: "https://smms.app/image/x46FQWHYZ2sNlRu.jpg"
+thumbnail: "https://s2.loli.net/y/03/03/x46FQWHYZ2sNlRu.jpg"
+cover: "https://s2.loli.net/2023/01/01/Gy6HJivoBEmutrx.jpg"
 
 ---
 
