@@ -5,9 +5,9 @@ tags:
 - make
 categories: 
 - [Tutorial, Program Tool]
+excerpt: "Make 可自动决定一个大程序中哪些文件需要重新编译，并发布重新编译它们的命令。本版本GNU Make使用手册由Richard M. Stallman and Roland McGrath编著。"
 comment: true
 ---
-> Make 可自动决定一个大程序中哪些文件需要重新编译，并发布重新编译它们的命令。本版本GNU Make使用手册由Richard M. Stallman and Roland McGrath编著。
 ### 参考文献
 1. [GNU官网](https://gcc.gnu.org/)
 2. [GNU Make使用手册](https://blog.51cto.com/u_14592069/5712502)
