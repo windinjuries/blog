@@ -1,3 +1,14 @@
+---
+title: nfs tutorial
+date: 2023-2-25 8:00:00
+tags: ssh
+categories: 
+- [Tutorial]
+excerpt: "SSH 是 Linux 系统的登录工具，现在广泛用于服务器登录和各种加密通信"
+comment: true
+---
+
+
 ## ssh
 ```bash
 ssh user_name@ip

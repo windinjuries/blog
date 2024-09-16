@@ -1,3 +1,12 @@
+---
+title: arm linux tutorial
+date: 2023-2-25 12:00:00
+tags: linux
+categories: 
+- [Tutorial]
+excerpt: "linux"
+comment: true
+---
 # ARM Linux
 
 ## Driver

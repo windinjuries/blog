@@ -1,3 +1,12 @@
+---
+title: nfs tutorial
+date: 2023-2-25 8:00:00
+tags: nfs
+categories: 
+- [Tutorial]
+excerpt: "NFS就是Network File System的缩写，它最大的功能就是可以通过网络，让不同的机器、不同的操作系统可以共享彼此的文件"
+comment: true
+---
 # Network File System
 ## server
 ### 安装

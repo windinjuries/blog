@@ -1,4 +1,13 @@
-FTP就是文件传输协议。用于互联网双向传输，控制文件下载空间在服务器复制文件从本地计算机或本地上传文件复制到服务器上的空间。
+---
+title: ftp tutorial
+date: 2023-2-23 8:00:00
+tags: ftp
+categories: 
+- [Tutorial]
+excerpt: "FTP就是文件传输协议。用于互联网双向传输，控制文件下载空间在服务器复制文件从本地计算机或本地上传文件复制到服务器上的空间。"
+comment: true
+---
+
 ### 修改配置文件
 ```bash
 sudo vim /etc/vsftpd.conf
