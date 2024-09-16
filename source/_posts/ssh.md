@@ -1,5 +1,5 @@
 ---
-title: nfs tutorial
+title: ssh tutorial
 date: 2023-2-25 8:00:00
 tags: ssh
 categories: 
