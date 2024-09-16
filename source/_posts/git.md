@@ -80,7 +80,7 @@ git status
 
 ```bash
 #查看提交历史
-git log --oneline 
+git log --oneline --graph
 ```
 ### remote
 
@@ -155,10 +155,9 @@ git merge [branchname]
 ### checkout
 
 ```bash
-# 将添加到暂存区的文件版本恢复到工作区文件上
+# 将暂存区的文件版本恢复到工作区文件上
 # 注意：未被添加到暂存区的文件无法恢复
 
-#丢弃某个文件file
 git checkout -- [file]  
 #丢弃所有文件
 git checkout -- .  
@@ -166,13 +165,12 @@ git checkout -- .
 
 ### reset
 ```bash
-# reset分为以下三步：
-# 1. 将HEAD和master分支指针移动到对应的commit上
-# 2. 将commit中的文件版本覆盖到stage
-# 3. 将stage覆盖到workspace
-# 注意：
-# 1. reset是用于移动master分支指针，checkout是移动HEAD
-# 2. hard方式使用很危险
+# reset分为以下三种类型：
+# 1. soft: 将HEAD和master分支的指针移动到指定commit
+# 2. mixed: 在soft基础上将commit中的文件版本覆盖到stage(可以用于取消git add)
+# 3. hard: 将stage中的文件覆盖到workspace，该操作执行后无法恢复workspace修改的文件
+# ATTENTION：reset是移动master分支指针，checkout是移动HEAD
+
 git reset –-soft [commit] 
 git reset –-mixed [commit]
 git reset –-hard [commit]
@@ -180,9 +178,8 @@ git reset –-hard [commit]
 
 ### revert
 ```bash
-#用于没添加到暂存区的工作区文件
-#回滚某个版本作为新版本
-git revert 版本号  
+#回滚某个版本作为一个新版本
+git revert [commit]
 ```
 
 ### stash
@@ -197,7 +194,27 @@ git stash pop
 ## 删除进度
 git stash drop
 ```
+## tag
 
+```bash
+# 轻量标签
+git tag [tagname] [commit]
+# 附注标签
+git tag -a [tagname] [commit]
+# 显示所有标签
+git tag 
+# 显示某一标签
+git show [tagname]
+# 推送本地标签
+git push origin [tagname]
+# 推送所有标签
+git push origin --tags
+# 删除本地标签
+git tag -d [tagname]
+# 删除远程标签
+git push origin -d [tagname]
+
+```
 ### diff
 
 ```bash
@@ -217,7 +234,15 @@ git diff --cached commit
 git diff commit1 commit2
 ```
 
+### cherry-pick
+``` bash
+# 挑选指定提交到应用分支
+git cherry-pick [commit1] [commit2]
+```
+
 注意：命令的详细介绍在Linux环境下可如 `man git` 或者 `git --help` 查看
 ## Reference
-[git book](https://git-scm.com/book/zh/)  
-[git command introduce](https://blog.csdn.net/weixin_36168780/article/details/112100325)
+[Pro Git](https://git-scm.com/book/zh/)  
+[GotGit](https://www.worldhello.net/gotgit/)  
+[git command introduce](https://blog.csdn.net/weixin_36168780/article/details/112100325)  
+[git commit messgae](https://www.cnblogs.com/ltaodream/p/16113677.html)
