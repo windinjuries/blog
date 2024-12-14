@@ -132,15 +132,14 @@ git fetch origin master
 git branch [branch_name] 
 ```
 ```bash
-#切换分支
-git checkout [branch_name] 
-```
-```bash
 #查看分支
 git branch 
 #查看远程分支
 git branch -a 
+#查看本地分支和远程分支的追踪关系
+git branch -vv
 ```
+
 ```bash
 #删除分支
 git branch -D [branch_name] 
@@ -153,7 +152,7 @@ git merge [branchname]
 ```
 
 ### checkout
-
+1. 恢复文件
 ```bash
 # 将暂存区的文件版本恢复到工作区文件上
 # 注意：未被添加到暂存区的文件无法恢复
@@ -162,7 +161,12 @@ git checkout -- [file]
 #丢弃所有文件
 git checkout -- .  
 ```
-
+2. 切换分支/检出
+```bash
+git checkout [branch/commit]
+#新建分支并追踪远程分支
+git checkout -b [branch] [origin/branch]
+```
 ### reset
 ```bash
 # reset分为以下三种类型：
@@ -239,7 +243,13 @@ git diff commit1 commit2
 # 挑选指定提交到应用分支
 git cherry-pick [commit1] [commit2]
 ```
-
+### submodule
+```
+#克隆时直接拉取子模块
+git clone --recursive
+#克隆后拉取子模块
+git submodule update --init  --recursive
+```
 注意：命令的详细介绍在Linux环境下可如 `man git` 或者 `git --help` 查看
 ## Reference
 [Pro Git](https://git-scm.com/book/zh/)  
