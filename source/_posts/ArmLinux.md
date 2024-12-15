@@ -34,3 +34,19 @@ Linux是一种开源电脑操作系统内核。它是一个用C语言写成，�
 -  寄存器方式
 -  GPIO子系统(sysfs)  
 
+
+
+# Orangepi zero3
+
+## buildroot
+1. 官网下载buildroot-2024.02.09
+
+2. 使用预设配置编译
+
+```bash
+make list-defconfigs
+make orangepi_zero3_defconfig
+make menuconfig
+make
+```
+3.
