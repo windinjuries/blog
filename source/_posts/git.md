@@ -147,7 +147,7 @@ git branch -D [branch_name]
 
 ### merge
 ```bash
-#合并当前分支到branch_name
+#合并branch_name到当前分支
 git merge [branchname] 
 ```
 
