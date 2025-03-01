@@ -151,3 +151,4 @@ set(optVar initialValue CACHE BOOL helpString)
 ## 参考 
 [Modern Cmake](https://modern-cmake-cn.github.io/Modern-CMake-zh_CN/chapters/intro/newcmake.html)  
 [CMake 入门实战](https://www.hahack.com/codes/cmake/)
+[CMake Cookbook中文版](https://www.bookstack.cn/read/CMake-Cookbook/content-chapter5-5.4-chinese.md)
